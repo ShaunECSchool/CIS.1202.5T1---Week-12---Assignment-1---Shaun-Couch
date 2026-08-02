@@ -23,14 +23,14 @@ using namespace std;
 //Constructors------------------------------------
 Vehicle::Vehicle() 
 { 
-    string manufacturer = ""; 
-    int yearBuilt = 0; 
+    manufacturer = ""; 
+    yearBuilt = 0; 
 }
 
 Vehicle::Vehicle(string m, int y) 
 { 
-    string manufacturer = m; 
-    int yearBuilt = y; 
+    manufacturer = m; 
+    yearBuilt = y; 
 }
 
 //Class member functions--------------------------

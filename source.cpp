@@ -19,7 +19,9 @@ using namespace std;
     c. Get input from the user for manufacturer, year built, and towing capacity, then store this information in a Truck object.  Call the displayInfo method and display it on the output.
 */
 
-int main() //Manufactuer and year built are broken. Need to troubleshoot and fix.
+//Main-------------------------------------------
+
+int main()
 {
     //Creates a Vehicle object
     Vehicle vehicle1("Yoda", 2200);
