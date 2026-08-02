@@ -4,6 +4,8 @@ CIS.1202.5T1
 August/1/2026
 */
 
+#pragma once //Prevents multiple inclusions of the header file
+
 #include <iostream>
 #include <string>
 
@@ -18,6 +20,7 @@ using namespace std;
     b. Define a constructor and appropriate getters and setters
     c. Define a displayInfo method to display the contents of the object
 */
+
 
 //Class-----------------------------------------
 class Vehicle 

@@ -11,16 +11,16 @@ August/1/2026
 using namespace std;
 
 //Class-----------------------------------------
-class Car : public Vehicle
+class Truck : public Vehicle
 {
 private:
-    int numDoors;
+    int towingCapacity;
 public:
     //Constructors----------------------
-    Car();
-    Car(string m, int y, int d);
+    Truck();
+    Truck(string m, int y, int t);
 
     //Getters----------------------------
     void displayInfo();
-    int getNumDoors();
+    int getTowingCapacity();
 };

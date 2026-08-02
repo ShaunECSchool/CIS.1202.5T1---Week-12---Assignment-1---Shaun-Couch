@@ -7,31 +7,62 @@ August/1/2026
 #include <iostream>
 #include <string>
 #include "car.cpp"
+#include "truck.cpp"
 
 using namespace std;
-
-//Instructions--------------------------------
-
-/*
-4. Write a main function to test the classes and methods.
-    a. Get input from the user for manufacturer and year built, then store this information in a Vehicle object.  Call the displayInfo method and display it on the output.
-    b. Get input from the user for manufacturer, year built, and number of doors, then store this information in a Car object.  Call the displayInfo method and display it on the output.
-    c. Get input from the user for manufacturer, year built, and towing capacity, then store this information in a Truck object.  Call the displayInfo method and display it on the output.
-*/
 
 //Main-------------------------------------------
 
 int main()
 {
-    //Creates a Vehicle object
-    Vehicle vehicle1("Yoda", 2200);
+    string manufacturer;
+    int yearBuilt;
+    int numDoors;
+    int towingCapacity;
+
+//Vehicle----------------------------
+    cout << "Enter the manufacturer: ";
+    getline(cin, manufacturer);
+    
+    cout << "Enter the year built: ";
+    cin >> yearBuilt;
+    cout << endl;
+    cin.ignore(); 
+
+    Vehicle vehicle1(manufacturer, yearBuilt);
     vehicle1.displayInfo();
     cout << endl;
+    
+//Car------------------------------
+    cout << "Enter the manufacturer: ";
+    getline(cin, manufacturer);
+    
+    cout << "Enter the year built: ";
+    cin >> yearBuilt;
 
-    //Creates a Car object
-    Car car1("Donna", 2222, 4);
+    cout << "Enter the number of doors: ";
+    cin >> numDoors;
+    cout << endl;
+    cin.ignore(); 
+
+    Car car1(manufacturer, yearBuilt, numDoors);
     car1.displayInfo();
     cout << endl;
+
+//Truck----------------------------
+    cout << "Enter the manufacturer: ";
+    getline(cin, manufacturer);
+    
+    cout << "Enter the year built: ";
+    cin >> yearBuilt;
+
+    cout << "Enter the towing capacity: ";
+    cin >> towingCapacity;
+    cout << endl;
+    cin.ignore(); 
+
+    Truck truck1(manufacturer, yearBuilt, towingCapacity);
+    truck1.displayInfo();
 
     return 0;
 }

@@ -4,21 +4,13 @@ CIS.1202.5T1
 August/1/2026
 */
 
+#pragma once //Prevents multiple inclusions of the header file
+
 #include <iostream>
 #include <string>
 #include "vehicle.h"
 
 using namespace std;
-
-//Instructions--------------------------------
-
-/*
-1. Define a base class called Vehicle.  Define the  member variables and method prototypes in Vehicle.h, and the implementation of the methods in Vehicle.cpp.
-    a. Define member variables for manufacturer and year built
-    b. Define a constructor and appropriate getters and setters
-    c. Define a displayInfo method to display the contents of the object
-*/
-
 
 //Constructors------------------------------------
 Vehicle::Vehicle() 
