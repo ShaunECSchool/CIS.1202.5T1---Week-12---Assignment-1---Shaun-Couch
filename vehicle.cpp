@@ -35,7 +35,7 @@ Vehicle::Vehicle(string m, int y)
 
 //Class member functions--------------------------
 
-//getters----------------------------
+//Getters----------------------------
 void Vehicle::displayInfo()
 { 
     cout << "Manufacturer: " << manufacturer << endl; 

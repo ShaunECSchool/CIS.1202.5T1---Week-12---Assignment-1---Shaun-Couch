@@ -26,16 +26,18 @@ private:
     string manufacturer;
     int yearBuilt;
 public:
-    //Constructors----------------------
+    //Constructors-----------------------
     Vehicle();
     Vehicle(string m, int y);
     
-    //getters----------------------------
+//Class member function prototypes-------
+    
+    //Getters----------------------------
     void displayInfo();
     string getManufacturer(); 
     int getYearBuilt(); 
 
-    //setters----------------------------
+    //Setters----------------------------
     void setManufacturer(string m);
     void setYearBuilt(int y);
 };
