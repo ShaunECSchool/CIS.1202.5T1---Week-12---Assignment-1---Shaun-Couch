@@ -27,29 +27,15 @@ private:
     int yearBuilt;
 public:
     //Constructors----------------------
-    Vehicle() 
-    { manufacturer = ""; yearBuilt = 0; }
-    
-    Vehicle(string m, int y) 
-    { manufacturer = m; yearBuilt = y; }
+    Vehicle();
+    Vehicle(string m, int y);
     
     //getters----------------------------
-    void displayInfo() 
-    { 
-        cout << "Manufacturer: " << manufacturer << endl; 
-        cout << "Year Built: " << yearBuilt << endl; 
-    }
-
-    string getManufacturer() 
-    { return manufacturer; }
-    
-    int getYearBuilt() 
-    { return yearBuilt; }
+    void displayInfo();
+    string getManufacturer(); 
+    int getYearBuilt(); 
 
     //setters----------------------------
-    void setManufacturer(string m)
-    { manufacturer = m; }
-    
-    void setYearBuilt(int y)
-    { yearBuilt = y; }
+    void setManufacturer(string m);
+    void setYearBuilt(int y);
 };
